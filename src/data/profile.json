@@ -11,8 +11,8 @@
   "phone": "+84826892848",
   "github": "https://github.com/huudangg0204",
   "linkedin": "https://linkedin.com/in/huudangg0204",
-  "cvPath": "/huudangg0204/assets/cv/LeCaoHuuDang_CV.pdf",
-  "avatar": "/huudangg0204/assets/avatar/profile-pixel.svg",
+  "cvPath": "/assets/cv/LeCaoHuuDang_CV.pdf",
+  "avatar": "/assets/avatar/profile-pixel.svg",
   "location": "Ho Chi Minh City, Vietnam",
   "characterStats": {
     "hp": "100/100",
@@ -58,25 +58,25 @@
           "title": "Until Then OST - Memories",
           "artist": "Until Then OST (Polychroma Games)",
           "mood": "Nostalgic Focus & Reflection",
-          "src": "/huudangg0204/assets/music/Until Then OST - Memories.mp3"
+          "src": "/assets/music/Until Then OST - Memories.mp3"
         },
         {
           "title": "OMORI - Final Duet",
           "artist": "OMORI OST (Pedro Silva & bo en)",
           "mood": "Emotional Deep Flow",
-          "src": "/huudangg0204/assets/music/OMORI - Final Duet.mp3"
+          "src": "/assets/music/OMORI - Final Duet.mp3"
         },
         {
           "title": "Fukashigi no Carte",
           "artist": "Mai Sakurajima & Cast",
           "mood": "Late Night Refactor & Anime ED",
-          "src": "/huudangg0204/assets/music/fukashigi no carte.mp3"
+          "src": "/assets/music/fukashigi no carte.mp3"
         },
         {
           "title": "Color Your Night",
           "artist": "Persona 3 Reload OST",
           "mood": "Late Night Walk & Coding",
-          "src": "/huudangg0204/assets/music/Color Your Night.mp3"
+          "src": "/assets/music/Color Your Night.mp3"
         }
       ]
     },
