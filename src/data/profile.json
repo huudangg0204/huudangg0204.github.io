@@ -1,0 +1,209 @@
+{
+  "name": "Le Cao Huu Dang",
+  "nameEn": "Le Cao Huu Dang",
+  "title": "AI Systems & Data Science Engineer",
+  "subtitle": "B.Sc in Data Science at UIT (VNU-HCM) | Researcher at UIT NLP Research Group",
+  "status": "Ready for Quest / Open to AI Roles",
+  "statusEmoji": "🟢",
+  "level": "LV. 22",
+  "characterClass": "AI Alchemist / Model Slayer",
+  "email": "huudangg301@gmail.com",
+  "phone": "+84826892848",
+  "github": "https://github.com/huudangg0204",
+  "linkedin": "https://linkedin.com/in/huudangg0204",
+  "cvPath": "/huudangg0204/assets/cv/LeCaoHuuDang_CV.pdf",
+  "avatar": "/huudangg0204/assets/avatar/profile-pixel.svg",
+  "location": "Ho Chi Minh City, Vietnam",
+  "characterStats": {
+    "hp": "100/100",
+    "mp": "96/100",
+    "exp": "8,450 / 10,000 EXP",
+    "stamina": "Debugging till 3 AM",
+    "weapons": [
+      "PyTorch 2.x",
+      "INT8 Sherpa-ONNX",
+      "LangChain/LangGraph",
+      "Docker"
+    ]
+  },
+  "personal": {
+    "motto": "Research asks why. Engineering asks how. I want to understand both. :P",
+    "hobbies": [
+      {
+        "title": "Specialty Coffee",
+        "icon": "☕",
+        "desc": "Pour-over V60 every morning to kickstart logical flow before launching model training pipelines."
+      },
+      {
+        "title": "Mechanical Keyboards",
+        "icon": "⌨️",
+        "desc": "Tactile switch enthusiast with custom ergonomic layouts tuned for high-cadence development."
+      },
+      {
+        "title": "Running & Fitness",
+        "icon": "🏃",
+        "desc": "Weekend distance runs to clear the mind and build endurance for 48-hour AI Hackathons."
+      },
+      {
+        "title": "Edge AI Hacking",
+        "icon": "🕹️",
+        "desc": "Benchmarking lightweight open models (Llama 3.2 1B/3B, Moonshine) on resource-constrained devices."
+      }
+    ],
+    "music": {
+      "genre": "J-RPG, Indie OSTs & Melodic Coding Vibes",
+      "status": "Now Playing: 'Until Then OST - Memories'",
+      "tracks": [
+        {
+          "title": "Until Then OST - Memories",
+          "artist": "Until Then OST (Polychroma Games)",
+          "mood": "Nostalgic Focus & Reflection",
+          "src": "/huudangg0204/assets/music/Until Then OST - Memories.mp3"
+        },
+        {
+          "title": "OMORI - Final Duet",
+          "artist": "OMORI OST (Pedro Silva & bo en)",
+          "mood": "Emotional Deep Flow",
+          "src": "/huudangg0204/assets/music/OMORI - Final Duet.mp3"
+        },
+        {
+          "title": "Fukashigi no Carte",
+          "artist": "Mai Sakurajima & Cast",
+          "mood": "Late Night Refactor & Anime ED",
+          "src": "/huudangg0204/assets/music/fukashigi no carte.mp3"
+        },
+        {
+          "title": "Color Your Night",
+          "artist": "Persona 3 Reload OST",
+          "mood": "Late Night Walk & Coding",
+          "src": "/huudangg0204/assets/music/Color Your Night.mp3"
+        }
+      ]
+    },
+    "movies": {
+      "genre": "Sci-Fi, Cyberpunk & Mind-bending Anime",
+      "favorites": [
+        {
+          "title": "Interstellar (2014)",
+          "tag": "Cinema Masterpiece",
+          "desc": "Inspiration on relentless perseverance, relativity, and physics exploration."
+        },
+        {
+          "title": "Steins;Gate (2011)",
+          "tag": "All-time Anime",
+          "desc": "Diverging worldlines and an unwavering passion for scientific discovery."
+        },
+        {
+          "title": "Blade Runner 2049",
+          "tag": "Cyberpunk Vision",
+          "desc": "Profound inquiries into the boundary between artificial intelligence and human soul."
+        },
+        {
+          "title": "Mr. Robot",
+          "tag": "Tech Thriller",
+          "desc": "Authentic depiction of Linux terminals, cyber defense, and systems psychology."
+        }
+      ]
+    }
+  },
+  "education": [
+    {
+      "school": "University of Information Technology (VNU-HCM)",
+      "schoolEn": "University of Information Technology (VNU-HCM)",
+      "degree": "Bachelor of Science in Data Science",
+      "degreeEn": "Bachelor of Science in Data Science",
+      "gpa": "3.32 / 4.0",
+      "period": "2023 – 2027",
+      "location": "Ho Chi Minh City, Vietnam",
+      "highlight": "Distinguished researcher at Faculty of Computer Science & Data Engineering"
+    }
+  ],
+  "research": {
+    "lab": "UIT NLP Research Group",
+    "role": "NLP & Multimodal Researcher",
+    "period": "2023 – Present",
+    "highlights": [
+      "Co-constructed the ViVQA Dataset: 38,000 images and 50,000 Vietnamese QA pairs.",
+      "Orchestrated multimodal annotation pipelines for over 20 domain annotators.",
+      "Researched Transformer reasoning architectures and Neural Module Networks for Vietnamese Visual QA."
+    ]
+  },
+  "skills": {
+    "llm": {
+      "label": "LLM & Agentic AI",
+      "icon": "🤖",
+      "color": "#0284C7",
+      "powerLevel": 94,
+      "items": [
+        "LangChain",
+        "LangGraph",
+        "Multi-Agent Workflows",
+        "Advanced RAG",
+        "Prompt Engineering",
+        "Groq API",
+        "Llama 3.1"
+      ]
+    },
+    "retrieval": {
+      "label": "Retrieval & Vector Search",
+      "icon": "🔍",
+      "color": "#8B5CF6",
+      "powerLevel": 90,
+      "items": [
+        "ChromaDB",
+        "FAISS Index",
+        "OpenCLIP EVA02",
+        "Semantic Re-ranking",
+        "Hybrid Search",
+        "Vector Embeddings"
+      ]
+    },
+    "vision": {
+      "label": "Deep Learning & Speech/Vision",
+      "icon": "🧠",
+      "color": "#10B981",
+      "powerLevel": 92,
+      "items": [
+        "PyTorch",
+        "HuggingFace",
+        "Whisper",
+        "Zipformer",
+        "Moonshine ASR",
+        "Kokoro TTS",
+        "INT8 Quantization",
+        "Sherpa-ONNX"
+      ]
+    },
+    "data": {
+      "label": "Data Systems & Streaming",
+      "icon": "⚡",
+      "color": "#F59E0B",
+      "powerLevel": 85,
+      "items": [
+        "Apache Spark",
+        "Hadoop HDFS",
+        "PySpark",
+        "InfluxDB v3",
+        "Redis Cache",
+        "Time-Series Processing"
+      ]
+    },
+    "backend": {
+      "label": "Backend, DevOps & Deployment",
+      "icon": "🛡️",
+      "color": "#E11D48",
+      "powerLevel": 88,
+      "items": [
+        "FastAPI",
+        "Docker",
+        "Docker Compose",
+        "WebSockets",
+        "Nginx",
+        "Linux Shell",
+        "Flask",
+        "Node.js"
+      ]
+    }
+  },
+  "bio": "I am Huu Dang — an AI Systems & Data Science Engineer graduated from UIT (VNU-HCM). I pursue practical, production-grade AI: optimizing cutting-edge models (Speech, Vision, LLM) to deliver sub-second latency even in offline or consumer-grade environments."
+}

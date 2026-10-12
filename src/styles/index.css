@@ -1,0 +1,468 @@
+/* ============================================================
+   RETRO PIXEL QUEST DESIGN SYSTEM — CREAM PALETTE EDITION
+   Theme: 8-bit / 16-bit Mario Adventure on Warm Cream Canvas
+   Typography: 'Press Start 2P' (Headings/HUD) + 'Plus Jakarta Sans' (Body)
+   ============================================================ */
+
+:root {
+  /* Cream Palette Fundamentals */
+  --bg-cream: #FAF6EE;
+  --bg-cream-soft: #F4EDE0;
+  --bg-cream-deep: #EBE1D0;
+  --bg-card: #FFFDF9;
+  --bg-card-alt: #FBF7EE;
+
+  /* Contrast / Outline: Deep Roast Cocoa */
+  --pixel-dark: #2A2118;
+  --pixel-border: #2A2118;
+  --text-main: #2A2118;
+  --text-muted: #645648;
+  --text-soft: #918274;
+
+  /* Retro Game Accents */
+  --coin-gold: #F59E0B;
+  --coin-gold-hover: #D97706;
+  --mario-red: #E11D48;
+  --one-up-green: #10B981;
+  --pipe-green: #059669;
+  --sky-blue: #0284C7;
+  --power-violet: #8B5CF6;
+  --star-yellow: #FBBF24;
+  --brick-orange: #EA580C;
+
+  /* Fonts */
+  --font-pixel: 'Press Start 2P', monospace, cursive;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Pixel Shadows & Borders */
+  --border-width: 3px;
+  --pixel-shadow-sm: 2px 2px 0px var(--pixel-dark);
+  --pixel-shadow: 4px 4px 0px var(--pixel-dark);
+  --pixel-shadow-lg: 6px 6px 0px var(--pixel-dark);
+  --pixel-shadow-inset: inset -2px -2px 0px rgba(0,0,0,0.15);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  background-color: var(--bg-cream);
+  color: var(--text-main);
+  font-family: var(--font-body);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-cream);
+  background-image: 
+    radial-gradient(rgba(42, 33, 24, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar in Retro Style */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-cream-soft);
+  border-left: 2px solid var(--pixel-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--coin-gold);
+  border: 2px solid var(--pixel-dark);
+  box-shadow: inset 1px 1px 0px #FFF;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brick-orange);
+}
+
+/* Typography Helpers */
+.font-pixel {
+  font-family: var(--font-pixel);
+  letter-spacing: -0.5px;
+}
+
+.font-body {
+  font-family: var(--font-body);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Pixel Card Container */
+.pixel-card {
+  background: var(--bg-card);
+  border: var(--border-width) solid var(--pixel-dark);
+  box-shadow: var(--pixel-shadow);
+  padding: 1.5rem;
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.pixel-card-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--pixel-shadow-lg);
+}
+
+/* Pixel Buttons */
+.pixel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: var(--font-pixel);
+  font-size: 0.72rem;
+  padding: 0.75rem 1.25rem;
+  border: var(--border-width) solid var(--pixel-dark);
+  box-shadow: var(--pixel-shadow);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+  user-select: none;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+.pixel-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--pixel-shadow-lg);
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--pixel-shadow-sm);
+}
+
+.pixel-btn-primary {
+  background: var(--coin-gold);
+  color: var(--pixel-dark);
+}
+.pixel-btn-primary:hover {
+  background: #FBBF24;
+}
+
+.pixel-btn-green {
+  background: var(--one-up-green);
+  color: #FFF;
+}
+.pixel-btn-green:hover {
+  background: #34D399;
+  color: var(--pixel-dark);
+}
+
+.pixel-btn-red {
+  background: var(--mario-red);
+  color: #FFF;
+}
+
+.pixel-btn-blue {
+  background: var(--sky-blue);
+  color: #FFF;
+}
+
+.pixel-btn-white {
+  background: #FFFFFF;
+  color: var(--pixel-dark);
+}
+
+/* Retro Badges / Chips */
+.pixel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-pixel);
+  font-size: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  border: 2px solid var(--pixel-dark);
+  box-shadow: var(--pixel-shadow-sm);
+  background: var(--bg-cream-soft);
+  color: var(--pixel-dark);
+  white-space: nowrap;
+}
+
+/* World Section Header */
+.world-banner {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.world-tag {
+  display: inline-block;
+  font-family: var(--font-pixel);
+  font-size: 0.75rem;
+  background: var(--coin-gold);
+  color: var(--pixel-dark);
+  padding: 0.4rem 1rem;
+  border: 2px solid var(--pixel-dark);
+  box-shadow: var(--pixel-shadow-sm);
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.world-title {
+  font-family: var(--font-pixel);
+  font-size: clamp(1.2rem, 3.5vw, 1.8rem);
+  color: var(--pixel-dark);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+.world-subtitle {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Retro Grid Background Pattern */
+.retro-pattern-bricks {
+  background-color: var(--bg-cream-soft);
+  background-image: 
+    linear-gradient(to right, rgba(42,33,24,0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(42,33,24,0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Animations */
+@keyframes coinBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes characterRun {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes flagWave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(4deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; filter: drop-shadow(0 0 6px var(--coin-gold)); }
+}
+
+.anim-bob {
+  animation: coinBob 1.6s ease-in-out infinite;
+}
+
+.anim-pulse {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .pixel-card {
+    padding: 1.1rem;
+  }
+  .world-title {
+    font-size: 1.1rem;
+  }
+  .pixel-btn {
+    font-size: 0.65rem;
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+/* ============================================================
+   RETRO SCROLL-DRIVEN MOTION & INTERACTION UTILITIES
+   ============================================================ */
+
+/* 1. Base Scroll Reveal Classes */
+.retro-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.retro-reveal.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.retro-reveal-left {
+  opacity: 0;
+  transform: translateX(-32px);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.retro-reveal-left.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.retro-reveal-right {
+  opacity: 0;
+  transform: translateX(32px);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.retro-reveal-right.is-revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.retro-reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.45s ease, transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: opacity, transform;
+}
+
+.retro-reveal-scale.is-revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger Delays */
+.delay-1 { transition-delay: 80ms; }
+.delay-2 { transition-delay: 160ms; }
+.delay-3 { transition-delay: 240ms; }
+.delay-4 { transition-delay: 320ms; }
+.delay-5 { transition-delay: 400ms; }
+
+/* 2. Mystery Block Scroll Bounce */
+@keyframes blockHintBounce {
+  0%, 100% { transform: translateY(0); }
+  25% { transform: translateY(-12px); }
+  50% { transform: translateY(0); }
+  75% { transform: translateY(-6px); }
+}
+
+.hint-bounce {
+  animation: blockHintBounce 0.6s cubic-bezier(0.18, 0.89, 0.32, 1.28) 1;
+}
+
+/* 3. Boss Battle Dramatic Sequences */
+@keyframes koSlamDown {
+  0% {
+    opacity: 0;
+    transform: scale(2.8) rotate(-20deg);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.9) rotate(-8deg);
+  }
+  80% {
+    transform: scale(1.08) rotate(-7deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(-8deg);
+  }
+}
+
+.anim-ko-slam {
+  animation: koSlamDown 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.3) forwards;
+}
+
+@keyframes microScreenShake {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-3px, 2px); }
+  40% { transform: translate(3px, -2px); }
+  60% { transform: translate(-2px, -1px); }
+  80% { transform: translate(2px, 1px); }
+}
+
+.anim-shake {
+  animation: microScreenShake 0.3s ease-in-out 1;
+}
+
+/* 4. Power Meter Shimmer / Scanline Sweep */
+@keyframes powerShimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+.power-shimmer-sweep {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.65) 50%, transparent 100%);
+  animation: powerShimmer 2.2s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* 5. Pixel Confetti Particles */
+@keyframes confettiFall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(120px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.confetti-particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  animation: confettiFall 1.6s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* 6. Parallax Floating Clouds in Background */
+.retro-clouds-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.pixel-cloud {
+  position: absolute;
+  background: rgba(42, 33, 24, 0.035);
+  box-shadow: 
+    8px 0 0 rgba(42, 33, 24, 0.035),
+    -8px 0 0 rgba(42, 33, 24, 0.035),
+    0 -8px 0 rgba(42, 33, 24, 0.035);
+  border-radius: 4px;
+}
+
+/* 7. Accessibility: Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .retro-reveal,
+  .retro-reveal-left,
+  .retro-reveal-right,
+  .retro-reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .anim-bob,
+  .anim-pulse,
+  .anim-ko-slam,
+  .anim-shake,
+  .hint-bounce,
+  .confetti-particle {
+    animation: none !important;
+  }
+}
+

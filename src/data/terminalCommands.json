@@ -1,0 +1,230 @@
+{
+  "commands": {
+    "help": {
+      "description": "Hiển thị danh sách tất cả các lệnh có thể dùng",
+      "output": [
+        "╔══════════════════════════════════════════════════════╗",
+        "║           huudang@ai-lab:~$ HELP MANUAL              ║",
+        "╚══════════════════════════════════════════════════════╝",
+        "",
+        "  whoami                    → Tiểu sử và định hướng nghề nghiệp",
+        "  skills                    → Tất cả kỹ năng kỹ thuật",
+        "  skills --category llm     → Kỹ năng LLM & Agentic AI",
+        "  skills --category vision  → Kỹ năng Deep Learning & Vision",
+        "  skills --category backend → Kỹ năng Backend & DevOps",
+        "  projects                  → Danh sách 5 dự án tiêu biểu",
+        "  run-pipeline speech       → Giả lập Speech-to-Speech Pipeline",
+        "  run-pipeline rag          → Giả lập Medical RAG Pipeline",
+        "  contact                   → Thông tin liên hệ",
+        "  clear                     → Xóa màn hình terminal",
+        "",
+        "  💡 Hoặc bấm các nút Quick Ask bên dưới để hỏi nhanh!"
+      ]
+    },
+    "whoami": {
+      "description": "Tiểu sử và định hướng",
+      "output": [
+        "┌─────────────────────────────────────────────────────┐",
+        "│  👤  LÊ CAO HỮU ĐĂNG                               │",
+        "│      AI Systems & Data Science Engineer             │",
+        "└─────────────────────────────────────────────────────┘",
+        "",
+        "  🎓 BSc Data Science — UIT (VNU-HCM)  |  GPA: 3.32/4.0",
+        "  🔬 Researcher — UIT NLP Research Group",
+        "     → ViVQA Dataset: 38K ảnh, 50K cặp Q&A tiếng Việt",
+        "     → Điều phối 20 annotators thu thập dữ liệu đa phương thức",
+        "",
+        "  🎯 Định hướng: AI Engineer chuyên sâu về LLM, RAG,",
+        "     Speech AI và Multimodal systems.",
+        "",
+        "  📍 TP. Hồ Chí Minh, Việt Nam",
+        "  🟢 Open to AI/Data Science Opportunities"
+      ]
+    },
+    "skills": {
+      "description": "Hiển thị tất cả kỹ năng kỹ thuật",
+      "output": [
+        "┌──────────────────────────────────────────────────────┐",
+        "│  🛠️  TECHNICAL SKILLS MATRIX                         │",
+        "└──────────────────────────────────────────────────────┘",
+        "",
+        "  🤖 LLM & AGENTIC AI",
+        "     LangChain · LangGraph · Agent Workflows · RAG",
+        "     Prompt Engineering · Groq · Llama 3.1",
+        "",
+        "  🔍 RETRIEVAL & VECTOR SEARCH",
+        "     ChromaDB · FAISS · OpenCLIP EVA02 · Semantic Search",
+        "",
+        "  🧠 DEEP LEARNING & SPEECH/VISION",
+        "     PyTorch · HuggingFace · Whisper · Zipformer",
+        "     Moonshine (ASR) · Kokoro (TTS) · INT8 Quantization",
+        "     Sherpa-ONNX · ResNet-50 · Transformer",
+        "",
+        "  ⚡ DATA ENGINEERING",
+        "     Apache Spark · Hadoop HDFS · PySpark",
+        "     InfluxDB · Redis · Time-Series DB",
+        "",
+        "  🛠️ BACKEND & DEVOPS",
+        "     FastAPI · Docker · Docker Compose · WebSockets",
+        "     Nginx · Linux · Flask · Node.js"
+      ]
+    },
+    "skills --category llm": {
+      "description": "Kỹ năng LLM & Agentic AI",
+      "output": [
+        "┌──────────────────────────────────────────┐",
+        "│  🤖 LLM & AGENTIC AI SKILLS              │",
+        "└──────────────────────────────────────────┘",
+        "",
+        "  Framework:    LangChain, LangGraph",
+        "  Patterns:     Agent Workflows, RAG, Prompt Engineering",
+        "  Inference:    Groq API, Ollama (local)",
+        "  Models:       Llama 3.1 8B, Mixtral",
+        "",
+        "  ✅ Production RAG: HealthCare QA Copilot",
+        "     → 2.200 QA pairs · Domain Guardrail · Query Reformulation",
+        "",
+        "  💡 Tip: run 'run-pipeline rag' để xem RAG pipeline!"
+      ]
+    },
+    "skills --category vision": {
+      "description": "Kỹ năng Deep Learning & Vision",
+      "output": [
+        "┌──────────────────────────────────────────┐",
+        "│  🧠 DEEP LEARNING & SPEECH/VISION        │",
+        "└──────────────────────────────────────────┘",
+        "",
+        "  Framework:    PyTorch, HuggingFace Transformers",
+        "  Vision:       ResNet-50, OpenCLIP EVA02, VQA",
+        "  Speech ASR:   Whisper, Zipformer, Moonshine",
+        "  Speech TTS:   Kokoro (Neural TTS)",
+        "  Deployment:   INT8 Quantization, Sherpa-ONNX",
+        "",
+        "  ✅ SynVQA: 0.58 Harmonic Mean trên CLEVR & CLOSURE",
+        "  ✅ Speech Pipeline: RTF 0.18 trên CPU Intel i7",
+        "",
+        "  💡 Tip: run 'run-pipeline speech' để xem Speech AI!"
+      ]
+    },
+    "skills --category backend": {
+      "description": "Kỹ năng Backend & DevOps",
+      "output": [
+        "┌──────────────────────────────────────────┐",
+        "│  🛠️ BACKEND & DEVOPS SKILLS              │",
+        "└──────────────────────────────────────────┘",
+        "",
+        "  API:          FastAPI, Flask, Node.js",
+        "  Real-time:    WebSockets, Socket.IO",
+        "  Container:    Docker, Docker Compose",
+        "  Proxy:        Nginx, Linux Admin",
+        "  Frontend:     Next.js, React, Vite",
+        "",
+        "  ✅ Medical RAG: 100% Dockerized microservices",
+        "  ✅ YT Analytics: Real-time Socket.IO + InfluxDB v3"
+      ]
+    },
+    "projects": {
+      "description": "Danh sách 5 dự án tiêu biểu",
+      "output": [
+        "┌──────────────────────────────────────────────────────────────┐",
+        "│  🚀 5 FLAGSHIP AI PROJECTS                                   │",
+        "└──────────────────────────────────────────────────────────────┘",
+        "",
+        "  [1] 🎤 Speech-to-Speech Translation Pipeline",
+        "      → Offline VI↔EN/ZH · 1.2s latency · INT8 ONNX CPU",
+        "",
+        "  [2] 👁️ SynVQA - Neuro-Symbolic VQA",
+        "      → 0.58 HM trên CLEVR · ResNet-50 + NMN + Transformer",
+        "",
+        "  [3] 🏥 HealthCare QA Copilot (Vietnamese Medical RAG)",
+        "      → 2200 QA pairs · Llama 3.1 8B · Domain Guardrail",
+        "",
+        "  [4] 🎬 Multimodal Video Retrieval (OpenCLIP + FAISS)",
+        "      → 1M keyframes · 300ms Top-K · Text & Image Query",
+        "",
+        "  [5] 📊 YouTube Analytics Platform",
+        "      → 10K+ events · InfluxDB v3 · Chrome Extension V3",
+        "",
+        "  💡 Xem chi tiết tại trang Projects →"
+      ]
+    },
+    "contact": {
+      "description": "Thông tin liên hệ",
+      "output": [
+        "┌──────────────────────────────────────────┐",
+        "│  📬 CONTACT INFORMATION                  │",
+        "└──────────────────────────────────────────┘",
+        "",
+        "  📧 Email:    lecaohududang@gmail.com",
+        "  💼 LinkedIn: linkedin.com/in/huudangg0204",
+        "  🐙 GitHub:   github.com/huudangg0204",
+        "",
+        "  🟢 Open to: AI Engineer / Data Scientist",
+        "              MLOps / Research Engineer roles",
+        "",
+        "  📄 CV: /assets/cv/LeCaoHuuDang_CV.pdf"
+      ]
+    }
+  },
+  "pipelines": {
+    "speech": {
+      "title": "🎤 Speech-to-Speech Translation Pipeline",
+      "steps": [
+        { "node": "MIC INPUT", "status": "OK", "detail": "Audio captured via WebSocket stream", "delay": 200 },
+        { "node": "VAD", "status": "OK", "detail": "Voice Activity Detection — silence stripped", "delay": 400 },
+        { "node": "ASR (Zipformer/Moonshine)", "status": "OK", "detail": "Offline ASR · RTF 0.18 on CPU", "delay": 800 },
+        { "node": "Machine Translation", "status": "OK", "detail": "VI→EN translation · 320ms", "delay": 600 },
+        { "node": "TTS (Kokoro)", "status": "OK", "detail": "Neural voice synthesis · 600ms", "delay": 700 },
+        { "node": "AUDIO OUTPUT", "status": "DONE", "detail": "Total latency: 1.2s – 1.5s ✅", "delay": 300 }
+      ]
+    },
+    "rag": {
+      "title": "🏥 Medical RAG Pipeline",
+      "steps": [
+        { "node": "USER QUERY", "status": "OK", "detail": "Vietnamese medical question received", "delay": 200 },
+        { "node": "QUERY REFORMULATION", "status": "OK", "detail": "LangGraph multi-step reformulation", "delay": 600 },
+        { "node": "DOMAIN GUARDRAIL", "status": "OK", "detail": "Off-topic queries rejected automatically", "delay": 400 },
+        { "node": "CHROMADB RETRIEVAL", "status": "OK", "detail": "Top-K chunks from 2200 QA pairs · 85ms", "delay": 700 },
+        { "node": "LLM GENERATION (Llama 3.1 8B)", "status": "OK", "detail": "Groq inference · grounded response", "delay": 1200 },
+        { "node": "SOURCE CITATION", "status": "DONE", "detail": "Medical evidence sources displayed ✅", "delay": 300 }
+      ]
+    }
+  },
+  "quickChips": [
+    {
+      "label": "Kinh nghiệm RAG của Đăng là gì?",
+      "command": "skills --category llm",
+      "followUp": [
+        "",
+        "  📌 Highlight: HealthCare QA Copilot",
+        "     Đăng đã xây dựng hệ thống RAG y tế hoàn chỉnh từ đầu:",
+        "     → Thu thập & xử lý 2.200 cặp QA từ bệnh viện VN",
+        "     → Thiết kế query reformulation multi-step với LangGraph",
+        "     → Domain guardrail tự động chống hallucination",
+        "     → 100% containerized Docker Compose, production-ready"
+      ]
+    },
+    {
+      "label": "Speech-to-Speech chạy offline thế nào?",
+      "command": "run-pipeline speech",
+      "followUp": []
+    },
+    {
+      "label": "Thế mạnh lớn nhất là gì?",
+      "command": "whoami",
+      "followUp": [
+        "",
+        "  💪 CORE STRENGTHS:",
+        "     1. End-to-end AI System Builder — từ research đến production",
+        "     2. Offline/Edge AI — model quantization, CPU optimization",
+        "     3. Multimodal AI — Speech, Vision, Text unified systems",
+        "     4. Research Background — UIT NLP, dataset curation at scale"
+      ]
+    },
+    {
+      "label": "Tải CV",
+      "command": "contact",
+      "action": "downloadCV"
+    }
+  ]
+}

@@ -1,0 +1,383 @@
+[
+  {
+    "id": "speech-to-speech",
+    "title": "Offline Speech-to-Speech Translation Pipeline",
+    "shortTitle": "Speech-to-Speech",
+    "emoji": "🎤",
+    "boss": {
+      "name": "The High-Latency Goliath",
+      "threat": "Prohibitive latency & GPU dependency in bidirectional multilingual voice translation",
+      "type": "Performance Bottleneck Boss",
+      "status": "DEFEATED (S-RANK)",
+      "hp": 0,
+      "maxHp": 12000,
+      "exp": "+3,200 EXP",
+      "weapon": "Sherpa-ONNX + INT8 Quantization + WebSockets",
+      "loot": "Realtime Edge Voice Pipeline (1.2s Latency)"
+    },
+    "tags": [
+      "ASR",
+      "MT",
+      "TTS",
+      "INT8 ONNX",
+      "FastAPI",
+      "WebSocket"
+    ],
+    "tagColors": {
+      "ASR": "#0284C7",
+      "MT": "#8B5CF6",
+      "TTS": "#10B981",
+      "INT8 ONNX": "#F59E0B",
+      "FastAPI": "#E11D48",
+      "WebSocket": "#EC4899"
+    },
+    "summary": "Real-time bidirectional offline speech translation pipeline (VI↔EN, VI↔ZH) running locally without discrete GPUs.",
+    "description": "An end-to-end voice pipeline processing live microphone audio: Automatic Speech Recognition (ASR) → Neural Machine Translation (MT) → Natural Text-to-Speech (TTS) with total turnaround under 1.5 seconds. Fully offline and lightweight, running smoothly on standard Intel CPUs powered by INT8 quantization via Sherpa-ONNX.",
+    "metrics": [
+      {
+        "label": "Voice-to-Voice Latency",
+        "value": "1.2s – 1.5s",
+        "icon": "⏱️"
+      },
+      {
+        "label": "ASR Real-Time Factor",
+        "value": "0.18 – 0.20",
+        "icon": "📊"
+      },
+      {
+        "label": "Hardware Tested",
+        "value": "Intel i7-7700HQ (No GPU)",
+        "icon": "💻"
+      },
+      {
+        "label": "Supported Pairs",
+        "value": "VI ↔ EN, VI ↔ ZH",
+        "icon": "🌐"
+      }
+    ],
+    "architecture": [
+      "Voice Activity Detection (Silero VAD)",
+      "ASR (Zipformer / Moonshine)",
+      "Machine Translation Engine",
+      "TTS (Kokoro / Piper)"
+    ],
+    "techStack": [
+      "Sherpa-ONNX",
+      "INT8 Quantization",
+      "FastAPI",
+      "WebSocket",
+      "Moonshine ASR",
+      "Kokoro TTS"
+    ],
+    "github": "https://github.com/huudangg0204/demo-translation-pipeline.git",
+    "previewImage": "/huudangg0204/assets/projects/speech-to-speech/preview.png",
+    "galleryImages": [
+      "/huudangg0204/assets/projects/speech-to-speech/preview.png"
+    ],
+    "demoVideo": "/huudangg0204/assets/projects/speech-to-speech/demo.mp4",
+    "featured": true
+  },
+  {
+    "id": "synvqa",
+    "title": "Neuro-Symbolic Visual Question Answering (SynVQA)",
+    "shortTitle": "SynVQA",
+    "emoji": "👁️",
+    "boss": {
+      "name": "The Spatial Reasoning Sphinx",
+      "threat": "Black-box models guessing answers instead of executing true symbolic reasoning on complex scenes",
+      "type": "Multi-Hop Reasoning Boss",
+      "status": "DEFEATED (S-RANK)",
+      "hp": 0,
+      "maxHp": 15000,
+      "exp": "+4,000 EXP",
+      "weapon": "3-Stage Neuro-Symbolic Pipeline (ResNet50 + Transformer + NMN)",
+      "loot": "Interpretable Logic Execution Tree"
+    },
+    "tags": [
+      "PyTorch",
+      "ResNet-50",
+      "Transformer seq2seq",
+      "Neural Module Networks"
+    ],
+    "tagColors": {
+      "PyTorch": "#E11D48",
+      "ResNet-50": "#0284C7",
+      "Transformer seq2seq": "#8B5CF6",
+      "Neural Module Networks": "#10B981"
+    },
+    "summary": "3-stage VQA architecture: spatial feature extraction, question-to-program semantic parsing, and neural module reasoning.",
+    "description": "A Neuro-Symbolic framework combining Deep Representation Learning and Symbolic Reasoning to conquer Visual QA. The pipeline extracts spatial features with ResNet-50, parses natural language questions into executable logic trees via Transformer seq2seq, and executes steps through specialized Neural Modules for transparent, explainable answers.",
+    "metrics": [
+      {
+        "label": "Harmonic Mean Score",
+        "value": "0.58",
+        "icon": "🎯"
+      },
+      {
+        "label": "Benchmark Suite",
+        "value": "CLEVR & CLOSURE",
+        "icon": "📐"
+      },
+      {
+        "label": "Reasoning Steps",
+        "value": "Up to 8-hop modules",
+        "icon": "🏗️"
+      },
+      {
+        "label": "Fault Tolerance",
+        "value": "Auto-Resume Checkpoints",
+        "icon": "💾"
+      }
+    ],
+    "architecture": [
+      "Spatial Feature Extraction (ResNet-50)",
+      "Question Parser (Transformer)",
+      "Program Execution (NMN)",
+      "Explainable Answer Decoder"
+    ],
+    "techStack": [
+      "PyTorch",
+      "ResNet-50",
+      "Transformer",
+      "Neural Module Networks",
+      "CLEVR Dataset"
+    ],
+    "github": "https://github.com/huudangg0204",
+    "previewImage": "/huudangg0204/assets/projects/synvqa/preview.png",
+    "galleryImages": [
+      "/huudangg0204/assets/projects/synvqa/preview.png"
+    ],
+    "demoVideo": "/huudangg0204/assets/projects/synvqa/demo.mp4",
+    "featured": true
+  },
+  {
+    "id": "medical-rag",
+    "title": "HealthCare QA Copilot (Vietnamese Medical RAG)",
+    "shortTitle": "Medical RAG",
+    "emoji": "🏥",
+    "boss": {
+      "name": "The Hallucination Dragon",
+      "threat": "Dangerous clinical hallucinations and fabricated facts in medical knowledge retrieval",
+      "type": "Domain Risk Boss",
+      "status": "DEFEATED (S-RANK)",
+      "hp": 0,
+      "maxHp": 18000,
+      "exp": "+4,500 EXP",
+      "weapon": "Domain Guardrails + Query Reformulation + ChromaDB Citations",
+      "loot": "Validated Clinical Copilot Engine"
+    },
+    "tags": [
+      "FastAPI",
+      "LangChain",
+      "ChromaDB",
+      "Llama 3.1 8B",
+      "Docker"
+    ],
+    "tagColors": {
+      "FastAPI": "#E11D48",
+      "LangChain": "#10B981",
+      "ChromaDB": "#8B5CF6",
+      "Llama 3.1 8B": "#F59E0B",
+      "Docker": "#0284C7"
+    },
+    "summary": "Multi-turn clinical QA assistant backed by 2,200 verified hospital QA pairs, equipped with query reformulation and domain guardrails.",
+    "description": "Specialized RAG architecture built for high-stakes medical Q&A. Integrates Llama 3.1 8B via Groq high-speed inference and ChromaDB vector store. Employs automated guardrails to reject non-clinical queries and multi-turn query rewriting to preserve conversational context while validating factual source citations.",
+    "metrics": [
+      {
+        "label": "Verified Medical Pairs",
+        "value": "2,200+ Clinical QA",
+        "icon": "📚"
+      },
+      {
+        "label": "Containerization",
+        "value": "100% Docker Compose",
+        "icon": "🐳"
+      },
+      {
+        "label": "Safety Shield",
+        "value": "Strict Domain Guardrail",
+        "icon": "🛡️"
+      },
+      {
+        "label": "Inference Backbone",
+        "value": "Llama 3.1 8B (Groq)",
+        "icon": "🤖"
+      }
+    ],
+    "architecture": [
+      "User Multi-turn Chat",
+      "Query Rewriter & Guardrail",
+      "ChromaDB Semantic Search",
+      "Evidence-grounded Generator",
+      "Citation Validator"
+    ],
+    "techStack": [
+      "FastAPI",
+      "LangChain",
+      "LangGraph",
+      "ChromaDB",
+      "Llama 3.1 8B",
+      "Docker Compose",
+      "Groq API"
+    ],
+    "github": "https://github.com/huudangg0204/HealthCare-QA.git",
+    "previewImage": "/huudangg0204/assets/projects/medical-rag/preview.png",
+    "galleryImages": [
+      "/huudangg0204/assets/projects/medical-rag/preview.png"
+    ],
+    "demoVideo": "/huudangg0204/assets/projects/medical-rag/demo.mp4",
+    "featured": true
+  },
+  {
+    "id": "video-retrieval",
+    "title": "Multimodal Video Keyframe Retrieval System",
+    "shortTitle": "Video Retrieval",
+    "emoji": "🎬",
+    "boss": {
+      "name": "The 100GB Keyframe Leviathan",
+      "threat": "Locating exact scene moments across 1 million keyframes with sub-second retrieval latency",
+      "type": "Big Data Search Boss",
+      "status": "DEFEATED (S-RANK)",
+      "hp": 0,
+      "maxHp": 10000,
+      "exp": "+2,800 EXP",
+      "weapon": "OpenCLIP EVA02 Multimodal Encoder + FAISS ANN Index",
+      "loot": "Sub-second Visual Frame Search Engine"
+    },
+    "tags": [
+      "OpenCLIP EVA02",
+      "FAISS",
+      "PyTorch",
+      "Flask"
+    ],
+    "tagColors": {
+      "OpenCLIP EVA02": "#F59E0B",
+      "FAISS": "#0284C7",
+      "PyTorch": "#E11D48",
+      "Flask": "#10B981"
+    },
+    "summary": "Multimodal video keyframe search engine supporting natural language and image queries across 100GB of video archives.",
+    "description": "Engineered for high-volume multimodal retrieval, allowing users to enter descriptive text prompts or upload reference images to locate precise video timestamps among 1+ million extracted keyframes. Utilizes OpenCLIP EVA02 embeddings coupled with FAISS approximate nearest neighbor index.",
+    "metrics": [
+      {
+        "label": "Query Latency (Top-K)",
+        "value": "300ms – 500ms",
+        "icon": "⚡"
+      },
+      {
+        "label": "Indexed Keyframes",
+        "value": "~1,000,000 frames",
+        "icon": "🎞️"
+      },
+      {
+        "label": "Dataset Scale",
+        "value": "100GB+ video archives",
+        "icon": "💾"
+      },
+      {
+        "label": "Input Flexibility",
+        "value": "Text & Image Query",
+        "icon": "🔍"
+      }
+    ],
+    "architecture": [
+      "Text / Image Input",
+      "OpenCLIP EVA02 Encoder",
+      "FAISS Vector Search",
+      "Timestamp & Timeline Reconstructor"
+    ],
+    "techStack": [
+      "OpenCLIP EVA02",
+      "FAISS Index",
+      "PyTorch",
+      "Flask",
+      "NumPy",
+      "OpenCV"
+    ],
+    "github": "https://github.com/huudangg0204/Video-Retrieval-system.git",
+    "previewImage": "/huudangg0204/assets/projects/video-retrieval/preview.png",
+    "galleryImages": [
+      "/huudangg0204/assets/projects/video-retrieval/preview.png"
+    ],
+    "demoVideo": "/huudangg0204/assets/projects/video-retrieval/demo.mp4",
+    "featured": false
+  },
+  {
+    "id": "youtube-analytics",
+    "title": "YouTube Listening-Behaviour Analytics Platform",
+    "shortTitle": "YT Analytics",
+    "emoji": "📊",
+    "boss": {
+      "name": "The High-Frequency Stream Behemoth",
+      "threat": "Ingesting tens of thousands of continuous playback telemetry events without browser or DB stalls",
+      "type": "Streaming Load Boss",
+      "status": "DEFEATED (S-RANK)",
+      "hp": 0,
+      "maxHp": 9500,
+      "exp": "+2,400 EXP",
+      "weapon": "Chrome Extension V3 + Socket.IO + InfluxDB v3 + Redis",
+      "loot": "Realtime Time-Series Music Intelligence"
+    },
+    "tags": [
+      "Chrome Extension V3",
+      "Node.js",
+      "Socket.IO",
+      "InfluxDB v3",
+      "Next.js"
+    ],
+    "tagColors": {
+      "Chrome Extension V3": "#E11D48",
+      "Node.js": "#10B981",
+      "Socket.IO": "#0284C7",
+      "InfluxDB v3": "#F59E0B",
+      "Next.js": "#8B5CF6"
+    },
+    "summary": "Real-time music listening analytics platform capturing client playback events into time-series data pipelines.",
+    "description": "Full-stack telemetry solution featuring a Chrome Extension Manifest V3 that intercepts YouTube playback states, transmits bi-directional event streams via Socket.IO to a Node.js backend, and writes into InfluxDB v3 with 24-hour Redis TTL caching. Includes an interactive analytics dashboard in Next.js.",
+    "metrics": [
+      {
+        "label": "Processed Events",
+        "value": "10,000+ playback triggers",
+        "icon": "📈"
+      },
+      {
+        "label": "Cache Throughput",
+        "value": "Redis 24h-TTL Cache",
+        "icon": "⚡"
+      },
+      {
+        "label": "Time-Series Engine",
+        "value": "InfluxDB v3 Core",
+        "icon": "🗄️"
+      },
+      {
+        "label": "Socket Streaming",
+        "value": "Bi-directional WebSocket",
+        "icon": "🔄"
+      }
+    ],
+    "architecture": [
+      "Chrome Extension Content Script",
+      "Background Worker Service",
+      "Node.js Socket.IO Server",
+      "InfluxDB v3 & Redis",
+      "Next.js Analytics Dashboard"
+    ],
+    "techStack": [
+      "Chrome Extension V3",
+      "Node.js",
+      "Socket.IO",
+      "InfluxDB v3",
+      "Redis",
+      "Next.js",
+      "TypeScript"
+    ],
+    "github": "https://github.com/huudangg0204/Youtube-Tracker.git",
+    "previewImage": "/huudangg0204/assets/projects/youtube-analytics/preview.png",
+    "galleryImages": [
+      "/huudangg0204/assets/projects/youtube-analytics/preview.png"
+    ],
+    "demoVideo": "/huudangg0204/assets/projects/youtube-analytics/demo.mp4",
+    "featured": false
+  }
+]
